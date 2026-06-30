@@ -5,9 +5,8 @@
 
 ## Problem Statement
 
-<p>Table: <code>Tweets</code></p>
+Table: Tweets
 
-<pre>
 +----------------+---------+
 | Column Name    | Type    |
 +----------------+---------+
@@ -15,23 +14,22 @@
 | content        | varchar |
 +----------------+---------+
 tweet_id is the primary key (column with unique values) for this table.
-content consists of alphanumeric characters, &#39;!&#39;, or &#39; &#39; and no other special characters.
+content consists of alphanumeric characters, '!', or ' ' and no other special characters.
 This table contains all the tweets in a social media app.
-</pre>
 
-<p>&nbsp;</p>
 
-<p>Write a solution to find the IDs of the invalid tweets. The tweet is invalid if the number of characters used in the content of the tweet is <strong>strictly greater</strong> than <code>15</code>.</p>
+ 
 
-<p>Return the result table in <strong>any order</strong>.</p>
+Write a solution to find the IDs of the invalid tweets. The tweet is invalid if the number of characters used in the content of the tweet is strictly greater than 15.
 
-<p>The result format is in the following example.</p>
+Return the result table in any order.
 
-<p>&nbsp;</p>
-<p><strong class="example">Example 1:</strong></p>
+The result format is in the following example.
 
-<pre>
-<strong>Input:</strong> 
+ 
+Example 1:
+
+Input: 
 Tweets table:
 +----------+-----------------------------------+
 | tweet_id | content                           |
@@ -39,17 +37,37 @@ Tweets table:
 | 1        | Let us Code                       |
 | 2        | More than fifteen chars are here! |
 +----------+-----------------------------------+
-<strong>Output:</strong> 
+Output: 
 +----------+
 | tweet_id |
 +----------+
 | 2        |
 +----------+
-<strong>Explanation:</strong> 
+Explanation: 
 Tweet 1 has length = 11. It is a valid tweet.
 Tweet 2 has length = 33. It is an invalid tweet.
-</pre>
 
+## Examples
+
+```
+Input: 
+Tweets table:
++----------+-----------------------------------+
+| tweet_id | content                           |
++----------+-----------------------------------+
+| 1        | Let us Code                       |
+| 2        | More than fifteen chars are here! |
++----------+-----------------------------------+
+Output: 
++----------+
+| tweet_id |
++----------+
+| 2        |
++----------+
+Explanation: 
+Tweet 1 has length = 11. It is a valid tweet.
+Tweet 2 has length = 33. It is an invalid tweet.
+```
 
 ---
 *Synced automatically with [AlgoVault](https://github.com/mr-sanjai-offl/AlgoVault)*
